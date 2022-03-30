@@ -2,6 +2,7 @@
 
 #hero-section {
   height: 90vh;
+  width: 100vw;
   padding: 0 5vw;
 
   display: flex;
@@ -10,7 +11,6 @@
 
   .left {
     height: 100%;
-    width: 70%;
 
     display: flex;
     flex-direction: column;
@@ -34,6 +34,8 @@
     }
 
     #hero-section-videos {
+      width: 85%;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -47,8 +49,8 @@
         justify-content: space-between;
 
         iframe {
-          height: 200px;
-          width: 400px;
+          height: clamp(150px, 20vh, 250px);
+          width: clamp(200px, 20vw, 400px);
           border: 2px solid $white;
         }
       }
@@ -56,11 +58,10 @@
   }
 
   .right {
-    height: 100%;
-
     img {
       height: 830px;
       width: 907px;
+      aspect-ratio: contain;
     }
   }
 }

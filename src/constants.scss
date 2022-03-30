@@ -4,21 +4,21 @@ $gray: #a6a6a6;
 $yellow: #f8d114;
 
 h1 {
-  font-size: 94px;
+  font-size: clamp(6rem, calc(-2.0769rem + 9.2308vw), 9rem);
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
