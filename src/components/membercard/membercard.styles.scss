@@ -1,0 +1,26 @@
+@import "../../constants.scss";
+
+.member-card {
+  width: 420px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 375px;
+    width: 375px;
+  }
+
+  h4 {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  h5 {
+    font-family: "Krona One";
+    font-weight: 400;
+    text-align: center;
+    color: $gray;
+  }
+}

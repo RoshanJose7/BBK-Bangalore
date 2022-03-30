@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import "constants.scss";
+
+@font-face {
+  font-family: Benzin-Bold;
+  src: url(./assets/fonts/benzin-bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Krona One";
+  background-color: $black;
+  color: $white;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(248, 209, 20, 0.4);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $yellow;
+  border-radius: 20px;
+}

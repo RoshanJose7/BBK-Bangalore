@@ -1,0 +1,133 @@
+@import "../../constants.scss";
+
+#hero-section {
+  height: 90vh;
+  padding: 0 5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left {
+    height: 100%;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1 {
+      font-family: "Benzin-Bold";
+      letter-spacing: 6px;
+    }
+
+    h1:nth-child(2) {
+      color: $yellow;
+    }
+
+    h5:nth-child(1) {
+      width: 80%;
+    }
+
+    .elevated-button {
+      width: 80%;
+    }
+
+    #hero-section-videos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h5 {
+        margin: 20px 0;
+      }
+
+      #hero-section-videos-section {
+        display: flex;
+        justify-content: space-between;
+
+        iframe {
+          height: 200px;
+          width: 400px;
+          border: 2px solid $white;
+        }
+      }
+    }
+  }
+
+  .right {
+    height: 100%;
+
+    img {
+      height: 830px;
+      width: 907px;
+    }
+  }
+}
+
+#history-section {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-family: "Benzin-Bold";
+    letter-spacing: 6px;
+  }
+
+  #history-section-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .left {
+      height: 100%;
+      padding: 20px 5vw;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h4 {
+        letter-spacing: 2px;
+        line-height: 40px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+#chief-section {
+  margin: 50px 0;
+  padding: 20px 5vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: "Benzin-Bold";
+    letter-spacing: 6px;
+  }
+
+  .top {
+    margin-top: 50px;
+
+    h4 {
+      letter-spacing: 2px;
+      line-height: 40px;
+    }
+  }
+
+  .bottom {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
