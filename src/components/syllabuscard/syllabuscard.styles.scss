@@ -1,0 +1,98 @@
+@import "../../constants.scss";
+
+.syllabus-card {
+  margin-top: 40px;
+
+  height: 80px;
+  padding: 15px 40px;
+
+  border-radius: 5px;
+  background-color: #242424;
+
+  background-repeat: no-repeat;
+  background-position: 100% -25%;
+  background-size: 200px 460px;
+
+  transition: all 0.3s ease-in-out;
+
+  h4 {
+    font-family: "Benzin-Bold";
+    letter-spacing: 2px;
+    line-height: 30px;
+
+    margin: 10px 0;
+    padding-top: 5px;
+  }
+
+  .c-y {
+    color: $yellow;
+  }
+
+  .syllabus-card-header {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .svg {
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgba($color: #ffffff, $alpha: 0.2);
+      border-radius: 50%;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+      }
+
+      svg {
+        padding-top: 5px;
+
+        height: 50px;
+        width: 50px;
+
+        transform: rotateX(0);
+        transition: all 0.3s ease-out;
+      }
+    }
+  }
+
+  .syllabus-card-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 220px 20px 0;
+
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateY(-50px);
+    pointer-events: none;
+  }
+}
+
+.syllabus-card.open {
+  height: 460px;
+
+  background-position: 100% 100%;
+
+  .syllabus-card-header {
+    .svg {
+      svg {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+
+  .syllabus-card-content {
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

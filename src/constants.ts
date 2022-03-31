@@ -1,0 +1,73 @@
+export const syllabus = [
+  {
+    title: "10th Kyu",
+    subtitle: "Taikyoku Shodan",
+    left: "<h4>SUBJECTS</h4><h5>Basic Punches<br />Middle punch - Chudan Zuki<br />Face punch - Jodan Zuki <br />Down punch - Gedan Zuki<br />Blocks :<br />Down Block - Gedan Uke<br />Upper block - Jodan Uke<br />Inner forearm block - Uchi Ude Uke<br />Outer forearm block - Soto Ude Uke</h5>",
+    right:
+      "<h5>Stance :<br />Horse Stance - Kiba Dachi<br />Forward Stance - Zenkutsu Dachi<br />Kicks :<br />Front Kick - Mae Geri.</h5><h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-10.png",
+  },
+  {
+    title: "9th Kyu",
+    subtitle: "Taikyoku Sandan",
+    left: "<h4>SUBJECTS</h4><h5>6 Punches<br />Combination of Basic Punches and Blocks<br />Kicks:<br />Side Kick - Yuko Geri<br />Stance:<br />Back Stance - Kokustu Dachi</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-9.png",
+  },
+  {
+    title: "8th Kyu",
+    subtitle: "Hein Shodan",
+    left: "<h4>SUBJECTS</h4><h5>Block Combination<br />Back Fist Strike - Uraken Uchi<br />Chopping Technique - Shuto Uchi<br />Kicks:<br />Slap Kick - Mawashi Geri<br />Knife hand Block - Shuto Uke</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-8.png",
+  },
+  {
+    title: "7th Kyu",
+    subtitle: "Hein Nidan",
+    left: "<h4>SUBJECTS</h4><h5>Combination of Blocks, Punches and Back Fists techniques.<br/>Elbow Strikes - Empi Uchi.<br/>Kicks:<br/>Back Kick - Oshiro Geri</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-7.png",
+  },
+  {
+    title: "6th Kyu",
+    subtitle: "Hein Sandan",
+    left: "<h4>SUBJECTS</h4><h5>Combinations of Blocks, Punches, Elbow Strikes and Back Fisttechniques.<br />Kicks:<br />Inner Crescent Kick - Soto Mikazuki Geri<br />Outer Crescent Kick - Uchi Mikazuki Geri<br />Front Back Kick - Mae Oshiro Geri<br />Foot Sweeps - Ashi Barai</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-6.png",
+  },
+  {
+    title: "5th Kyu",
+    subtitle: "Hein Yondan",
+    left: "<h4>SUBJECTS</h4><h5>Stance:<br/>Cat Stance - Neko Ashi Dachi<br/>Kicks:<br/>Turning Kick - Mawashi Geri<br/>Hook Kick - Kake Geri / Ura Mawashi Geri<br/>Spinning Kicks -  Oshiro Mawashi Geri</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-5.png",
+  },
+  {
+    title: "4th Kyu",
+    subtitle: "Hein Godan",
+    left: "<h4>SUBJECTS</h4><h5>Kicks:<br/>Jumping Front Kick<br/>Jumping Side Kick</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-4.png",
+  },
+  {
+    title: "3rd Kyu",
+    subtitle: "Tekki Shodan",
+    left: "<h4>SUBJECTS</h4><h5>Double Jumping Front Kick<br/>Double Jumping Side Kick</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-3.png",
+  },
+  {
+    title: "2nd Kyu",
+    subtitle: "Tekki Nidan",
+    left: "<h4>SUBJECTS</h4><h5>Front leg Jumping Front Kick<br/>Front leg Jumping Side Kick<br/>Take downs</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-2.png",
+  },
+  {
+    title: "1st Kyu",
+    subtitle: "Tekki Sanda & Bassadal",
+    left: "<h4>SUBJECTS</h4><h5>Throws<br/>Flying Kicks</h5>",
+    right: "<h4>BELT TECHNIQUES</h4>",
+    imgUrl: "/images/syllabus/kyu-1.png",
+  },
+];
