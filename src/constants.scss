@@ -4,7 +4,7 @@ $gray: #a6a6a6;
 $yellow: #f8d114;
 
 h1 {
-  font-size: clamp(6rem, calc(-2.0769rem + 9.2308vw), 9rem);
+  font-size: clamp(4rem, calc(1.4286rem + 3.8095vw), 6rem);
 }
 
 h2 {
@@ -12,13 +12,15 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }

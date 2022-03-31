@@ -8,17 +8,18 @@
   align-items: center;
 
   img {
-    height: 375px;
-    width: 375px;
+    height: 250px;
+    width: 250px;
   }
 
   h4 {
+    font-weight: 800;
     margin-top: 20px;
     text-align: center;
   }
 
   h5 {
-    font-family: "Krona One";
+    font-family: "Poppins";
     font-weight: 400;
     text-align: center;
     color: $gray;

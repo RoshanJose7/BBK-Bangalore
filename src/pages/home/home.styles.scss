@@ -3,11 +3,12 @@
 #hero-section {
   height: 90vh;
   width: 100vw;
-  padding: 0 5vw;
+  padding: 0;
+  padding-left: 10vw;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   .left {
     height: 100%;
@@ -25,16 +26,12 @@
       color: $yellow;
     }
 
-    h5:nth-child(1) {
-      width: 80%;
-    }
-
     .elevated-button {
       width: 80%;
     }
 
     #hero-section-videos {
-      width: 85%;
+      width: 100%;
 
       display: flex;
       flex-direction: column;
@@ -49,66 +46,69 @@
         justify-content: space-between;
 
         iframe {
-          height: clamp(150px, 20vh, 250px);
-          width: clamp(200px, 20vw, 400px);
+          height: clamp(155px, 20vh, 185px);
+          width: clamp(250px, 20vw, 350px);
           border: 2px solid $white;
+        }
+
+        iframe:first-child {
+          margin-right: 20px;
         }
       }
     }
   }
 
   .right {
-    img {
-      height: 830px;
-      width: 907px;
-      aspect-ratio: contain;
-    }
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../../assets/images/homepage/hero-section-image.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 90vh;
   }
 }
 
 #history-section {
-  margin-top: 50px;
+  margin-top: 100px;
 
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 5vw;
 
-  h2 {
-    font-family: "Benzin-Bold";
-    letter-spacing: 6px;
+  .left {
+    flex: 3;
+    height: 100%;
+    padding: 20px 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      font-family: "Benzin-Bold";
+      letter-spacing: 6px;
+    }
   }
 
-  #history-section-content {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    .left {
-      height: 100%;
-      padding: 20px 5vw;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      h4 {
-        letter-spacing: 2px;
-        line-height: 40px;
-        margin-bottom: 50px;
-      }
-    }
+  .right {
+    flex: 1;
   }
 }
 
 #chief-section {
-  margin: 50px 0;
-  padding: 20px 5vw;
+  margin: 100px 0;
+  padding: 20px 10vw;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-image: url("../../assets/images/homepage/chief-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
 
   h2 {
     font-family: "Benzin-Bold";

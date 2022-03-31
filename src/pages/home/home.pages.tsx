@@ -3,7 +3,6 @@ import ElevatedButton from "../../components/ElevatedButton/elevatedbutton";
 import Chief1Image from "../../assets/images/homepage/chief-1.png";
 import Chief2Image from "../../assets/images/homepage/chief-2.png";
 import Chief3Image from "../../assets/images/homepage/chief-3.png";
-import HeroImage from "../../assets/images/homepage/hero-section-image.png";
 import HistorySectionImage from "../../assets/images/homepage/history-section-image.png";
 
 import MemberCard from "../../components/membercard/membercard.components";
@@ -20,8 +19,9 @@ function HomePage() {
           </div>
 
           <h5>
-            Get Trained with the best trainer from Bangalore and get your moves
-            right
+            Get Trained with the best trainer from Bangalore
+            <br />
+            and get your moves right
           </h5>
 
           <ElevatedButton text={"Register for upcoming batch"} />
@@ -53,48 +53,43 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="right">
-          <img src={HeroImage} alt="hero" />
-        </div>
+        <div className="right"></div>
       </main>
 
       <section id="history-section">
-        <h2>History of BBK</h2>
+        <div className="left">
+          <h2>History of BBK</h2>
+          <h4>Our Bangalore Budokan was started in 2005.</h4>
 
-        <div id="history-section-content">
-          <div className="left">
-            <h4>Our Bangalore Budokan was started in 2005.</h4>
+          <h4>
+            We are having a successful run from the past 12years, since the past
+            years we have trained over 10,000+ students and we currently have
+            over 75+ in-practice Black Belt's, 15+ trained Instructors and over
+            30+ certified District, State, National and International level
+            Referees and Technical committee members.
+          </h4>
 
-            <h4>
-              We are having a successful run from the past 12years, since the
-              past years we have trained over 10,000+ students and we currently
-              have over 75+ in-practice Black Belt's, 15+ trained Instructors
-              and over 30+ certified District, State, National and International
-              level Referees and Technical committee members.
-            </h4>
+          <h4>
+            BBK does not only expertise in Karate; we have trained personnel’s
+            and instructors in different forms of Martial Arts such as
+            Taekwondo, Aikido, Judo and many more.
+          </h4>
 
-            <h4>
-              BBK does not only expertise in Karate; we have trained personnel’s
-              and instructors in different forms of Martial Arts such as
-              Taekwondo, Aikido, Judo and many more.
-            </h4>
+          <h4>
+            BBK has over 35+ branches in Bangalore and we presently have 3+
+            branches in Udupi district. We have an aim of 100+ branches all over
+            Karnataka State soon.
+            <br />
+            As quoted by Bruce Lee - “A quality Martial Artist is always ready
+            for any move, and trains oneself invincible".
+            <br />
+            This is the main motto and vision of BBK. A Fit, Strong, Bold and
+            Invincible Young India.
+          </h4>
+        </div>
 
-            <h4>
-              BBK has over 35+ branches in Bangalore and we presently have 3+
-              branches in Udupi district. We have an aim of 100+ branches all
-              over Karnataka State soon.
-              <br />
-              As quoted by Bruce Lee - “A quality Martial Artist is always ready
-              for any move, and trains oneself invincible".
-              <br />
-              This is the main motto and vision of BBK. A Fit, Strong, Bold and
-              Invincible Young India.
-            </h4>
-          </div>
-
-          <div className="right">
-            <img src={HistorySectionImage} alt="History Section" />
-          </div>
+        <div className="right">
+          <img src={HistorySectionImage} alt="History Section" />
         </div>
       </section>
 
