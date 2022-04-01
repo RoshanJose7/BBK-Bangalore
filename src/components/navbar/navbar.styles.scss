@@ -6,6 +6,7 @@ $bar-color: red;
 
 nav {
   height: 10vh;
+  width: 100vw;
   padding: 20px 80px;
   font-family: Benzin-Bold;
 
@@ -86,7 +87,7 @@ nav {
 
   .nav-hide {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     right: -40vw;
     opacity: 0;
@@ -124,6 +125,35 @@ nav.back {
     .icon-2,
     .icon-3 {
       background-color: $black;
+    }
+  }
+}
+
+@media only screen and(max-width: 1366px) {
+  nav {
+    .nav-hide {
+      right: -50vw;
+      width: 50vw;
+    }
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  nav {
+    .nav-hide {
+      right: -50vw;
+      width: 60vw;
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  nav {
+    padding: 20px;
+
+    .nav-hide {
+      right: -100vw;
+      width: 100vw;
     }
   }
 }

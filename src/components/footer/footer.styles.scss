@@ -58,3 +58,17 @@ footer {
     }
   }
 }
+
+@media only screen and(max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+
+    .footer-contact,
+    .footer-socials,
+    .footer-more-links {
+      width: 250px;
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,24 +1,25 @@
 @import "../../constants.scss";
 
 #hero-section {
-  height: 90vh;
+  padding-top: 100px;
   width: 100vw;
   padding: 0;
-  padding-left: 10vw;
-
-  display: flex;
-  align-items: center;
 
   .left {
-    height: 100%;
+    padding-left: 5vw;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
+    background-image: url("../../assets/images/homepage/hero-section-image.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 90vh;
+
     h1 {
       font-family: "Benzin-Bold";
-      letter-spacing: 6px;
+      letter-spacing: 4px;
     }
 
     h1:nth-child(2) {
@@ -26,15 +27,16 @@
     }
 
     .elevated-button {
-      width: 80%;
+      margin-top: 20px;
+      width: 45%;
     }
 
     #hero-section-videos {
-      width: 100%;
+      width: 50%;
 
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
 
       h5 {
         margin: 20px 0;
@@ -45,8 +47,8 @@
         justify-content: space-between;
 
         iframe {
-          height: clamp(155px, 20vh, 185px);
-          width: clamp(250px, 20vw, 350px);
+          height: 185px;
+          width: 350px;
           border: 2px solid $white;
         }
 
@@ -56,25 +58,12 @@
       }
     }
   }
-
-  .right {
-    height: 100%;
-    width: 100%;
-
-    background-image: url("../../assets/images/homepage/hero-section-image.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 90vh;
-  }
 }
 
 #history-section {
-  margin-top: 100px;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 5vw;
 
   .left {
     flex: 3;
@@ -98,7 +87,8 @@
 
 #chief-section {
   margin: 100px 0;
-  padding: 20px 10vw;
+  width: 100vw;
+  padding: 20px 5vw;
 
   display: flex;
   flex-direction: column;
@@ -111,23 +101,127 @@
 
   h2 {
     font-family: "Benzin-Bold";
-    letter-spacing: 6px;
+    letter-spacing: 4px;
   }
 
-  .top {
-    margin-top: 50px;
+  #chief-section-content {
+    width: 100%;
 
-    h4 {
-      letter-spacing: 2px;
-      line-height: 40px;
+    .top {
+      margin-top: 50px;
+
+      h4 {
+        letter-spacing: 2px;
+        line-height: 40px;
+      }
+    }
+
+    .bottom {
+      margin-top: 50px;
+
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  #hero-section {
+    .left {
+      background-image: none;
+
+      .elevated-button {
+        width: 60%;
+      }
+
+      #hero-section-videos {
+        width: 75%;
+      }
+    }
+
+    .mobile-hero-img {
+      height: 500px;
+      width: 100%;
+
+      background-image: url("../../assets/images/homepage/hero-section-image.png");
+      background-repeat: no-repeat;
+      background-position: right;
     }
   }
 
-  .bottom {
-    margin-top: 50px;
-
-    display: flex;
-    justify-content: space-evenly;
+  #history-section {
+    flex-direction: column;
     align-items: center;
+
+    .right {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  #chief-section {
+    background-position: right;
+
+    #chief-section-content {
+      .bottom {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  #hero-section {
+    .left {
+      .elevated-button {
+        width: 80%;
+      }
+    }
+  }
+
+  #chief-section {
+    #chief-section-content {
+      .top {
+        h4 {
+          letter-spacing: 1px;
+          line-height: 28px;
+        }
+      }
+      .bottom {
+        .member-card {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 468px) {
+  #hero-section {
+    .left {
+      .elevated-button {
+        width: 90%;
+      }
+
+      #hero-section-videos {
+        #hero-section-videos-section {
+          flex-direction: column;
+
+          iframe {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    .mobile-hero-img {
+      width: 100%;
+
+      background-size: contain;
+    }
   }
 }

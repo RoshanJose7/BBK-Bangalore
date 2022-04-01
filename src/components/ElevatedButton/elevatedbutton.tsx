@@ -3,7 +3,7 @@ import "./elevatedbutton.styles.scss";
 function ElevatedButton({ text }: { text: string }) {
   return (
     <button className="elevated-button">
-      {text}
+      <h4>{text}</h4>
       <hr />
     </button>
   );

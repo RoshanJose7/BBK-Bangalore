@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import LogoImg from "../../assets/images/logo.png";
 import "./navbar.styles.scss";
 
@@ -8,6 +9,8 @@ function Navbar() {
   const icon3Ref = useRef<HTMLDivElement | null>(null);
   const navRef = useRef<HTMLDivElement | null>(null);
   const navLinksRef = useRef<HTMLDivElement | null>(null);
+
+  const navigate = useNavigate();
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 100 && !navRef.current?.classList.contains("back"))
@@ -23,9 +26,29 @@ function Navbar() {
     navLinksRef.current?.classList.toggle("show");
   }
 
+  function handleNavigate(route: string) {
+    window.scrollTo({
+      top: 0,
+    });
+
+    icon1Ref.current?.classList.remove("a");
+    icon2Ref.current?.classList.remove("c");
+    icon3Ref.current?.classList.remove("b");
+    navLinksRef.current?.classList.remove("show");
+
+    setTimeout(() => {
+      navigate(route);
+    }, 500);
+  }
+
   return (
     <nav ref={navRef}>
-      <img id="nav-logo" src={LogoImg} alt="Logo" />
+      <img
+        id="nav-logo"
+        src={LogoImg}
+        alt="Logo"
+        onClick={() => handleNavigate("/")}
+      />
 
       <div className="hamburger-icon" id="icon" onClick={handleClick}>
         <div ref={icon1Ref} className="icon-1" id="a"></div>
@@ -35,10 +58,10 @@ function Navbar() {
       </div>
 
       <div ref={navLinksRef} className="nav-hide">
-        <p>Organization</p>
-        <p>Our Dojo's</p>
-        <p>Syllabus</p>
-        <p>Events & Gallery</p>
+        <p onClick={() => handleNavigate("/organization")}>Organization</p>
+        <p onClick={() => handleNavigate("/dojos")}>Our Dojo's</p>
+        <p onClick={() => handleNavigate("/syllabus")}>Syllabus</p>
+        <p onClick={() => handleNavigate("/events")}>Events & Gallery</p>
       </div>
     </nav>
   );

@@ -14,17 +14,19 @@ function HomePage() {
       <main id="hero-section">
         <div className="left">
           <div>
-            <h1>Bangalore</h1>
-            <h1>Budokan</h1>
+            <div>
+              <h1>Bangalore</h1>
+              <h1>Budokan</h1>
+            </div>
+
+            <h5>
+              Get Trained with the best trainer from Bangalore
+              <br />
+              and get your moves right
+            </h5>
+
+            <ElevatedButton text={"Register for upcoming batch"} />
           </div>
-
-          <h5>
-            Get Trained with the best trainer from Bangalore
-            <br />
-            and get your moves right
-          </h5>
-
-          <ElevatedButton text={"Register for upcoming batch"} />
 
           <div id="hero-section-videos">
             <h5>Training Video/Hightlights</h5>
@@ -53,7 +55,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="right"></div>
+        <div className="mobile-hero-img"></div>
       </main>
 
       <section id="history-section">
