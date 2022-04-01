@@ -1,0 +1,42 @@
+#events-page {
+  h2 {
+    letter-spacing: 2px;
+    font-family: "Benzin-Bold";
+  }
+
+  .events {
+    margin-top: 100px;
+    padding: 0 10vw 40px;
+
+    .events-list {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  #gallery {
+    margin: 100px 0;
+
+    h2 {
+      margin-left: 10vw;
+    }
+
+    #gallery-img-1-container,
+    #gallery-img-2-container {
+      height: 630px;
+      margin: 20px 0 60px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    #gallery-img-1-container {
+      background-image: url("../../assets/images/gallery/1.png");
+    }
+
+    #gallery-img-2-container {
+      background-image: url("../../assets/images/gallery/2.png");
+    }
+  }
+}

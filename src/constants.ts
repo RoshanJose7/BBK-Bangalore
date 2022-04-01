@@ -249,3 +249,58 @@ export const bbList = [
   "Vyshnavi S",
   "Zaiba Quarth-Ul-Ain",
 ];
+
+export const upcomingEventsList = [
+  {
+    title: "Self Defense for Women",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/upcoming/placeholder.png",
+  },
+  {
+    title: "Self Defense for Women",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/upcoming/placeholder.png",
+  },
+  {
+    title: "Self Defense for Women",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/upcoming/placeholder.png",
+  },
+];
+
+export const pastEventsList = [
+  {
+    title: "Asia Cup",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/past/1.png",
+  },
+  {
+    title: "Mangalore Overall Championship",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/past/2.png",
+  },
+  {
+    title: "Mangalore Overall Championship",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/past/3.png",
+  },
+  {
+    title: "Mangalore Overall Championship",
+    subtitle: "Helps in learning the basic karate moves",
+    time: "31-03-2022 |4pm-5pm",
+    venue: "Whitefield Branch",
+    imgUrl: "/images/events/past/4.png",
+  },
+];
