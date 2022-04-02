@@ -150,19 +150,19 @@ function HomePage() {
           <div className="bottom">
             <MemberCard
               imgUrl={Chief1Image}
-              title="Grand Master Chew Choo Soof"
+              title="Grand Master Chew Choo Soot"
               subtitle="Founder of Budokan Style and Karate Budokan International"
             />
 
             <MemberCard
               imgUrl={Chief2Image}
-              title="Grand Master Richard T Soof"
+              title="Grand Master Richard T Soot"
               subtitle="Karate Budokan International - Australia"
             />
 
             <MemberCard
               imgUrl={Chief3Image}
-              title="Jyoshi B Parameshwar"
+              title="Kyoshi B Parameshwar"
               subtitle="Asia Chief of Karate Budokan International"
             />
           </div>

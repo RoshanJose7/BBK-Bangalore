@@ -22,7 +22,7 @@ function OrganizationPage() {
           />
           <MemberCard
             title="Ashok Suvarna"
-            subtitle="General Secretary Assistant Chief Instructor"
+            subtitle="General Secretary & Assistant Chief Instructor"
             imgUrl="/images/organization/bod/bod-3.png"
           />
         </div>

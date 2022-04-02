@@ -75,7 +75,7 @@ export const syllabus = [
 export const jpList = [
   {
     title: "Sharan N",
-    subtitle: "Manager Kumite Coach",
+    subtitle: "Manager & Kumite Coach",
     imgUrl: "/images/organization/jp/1.png",
   },
   {
