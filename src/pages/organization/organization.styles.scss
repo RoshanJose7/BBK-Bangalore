@@ -29,6 +29,8 @@
   }
 
   #organization-jp {
+    padding: 0 20px;
+
     .organization-jp-list {
       display: flex;
       justify-content: center;
@@ -81,6 +83,23 @@
       text-align: center;
     }
 
+    #organization-bod {
+      .member-card {
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+
+      .row {
+        width: 80%;
+
+        .member-card {
+          width: 50%;
+        }
+      }
+    }
+
     #organization-jp {
       .organization-jp-list {
         .member-card {
@@ -104,6 +123,23 @@
       .row {
         flex-direction: column;
         align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 468px) {
+  #organization-page {
+    #organization-jp {
+      .organization-jp-list {
+        .member-card {
+          width: 100%;
+
+          img {
+            height: 65px;
+            width: 65px;
+          }
+        }
       }
     }
   }

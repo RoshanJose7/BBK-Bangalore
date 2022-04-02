@@ -1,8 +1,6 @@
 @import "../../constants.scss";
 
 .member-card {
-  width: 420px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,5 +21,34 @@
     font-weight: 400;
     text-align: center;
     color: $gray;
+  }
+}
+
+@media only screen and(max-width: 468px) {
+  .member-card {
+    width: 90%;
+
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    img {
+      height: 65px;
+      width: 65px;
+    }
+
+    h4,
+    h5 {
+      margin: 0;
+      text-align: left;
+    }
+
+    .text {
+      margin-left: 10px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }

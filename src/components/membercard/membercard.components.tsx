@@ -13,8 +13,10 @@ function MemberCard({
     <article className="member-card">
       <img src={imgUrl} alt="Card" />
 
-      <h4>{title}</h4>
-      <h5>{subtitle}</h5>
+      <div className="text">
+        <h4>{title}</h4>
+        <h5>{subtitle}</h5>
+      </div>
     </article>
   );
 }

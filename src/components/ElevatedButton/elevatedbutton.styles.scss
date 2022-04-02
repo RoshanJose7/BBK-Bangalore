@@ -11,19 +11,8 @@
   font-family: "Poppins";
 
   transition: all 0.3s ease-in-out;
-
-  hr {
-    opacity: 0;
-    height: 5px;
-    background-color: $black;
-    transition: inherit;
-  }
 }
 
 .elevated-button:hover {
   background-color: $yellow;
-
-  hr {
-    opacity: 1;
-  }
 }

@@ -4,7 +4,6 @@ function ElevatedButton({ text }: { text: string }) {
   return (
     <button className="elevated-button">
       <h4>{text}</h4>
-      <hr />
     </button>
   );
 }

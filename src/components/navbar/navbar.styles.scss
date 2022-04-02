@@ -23,8 +23,8 @@ nav {
   #nav-logo {
     cursor: pointer;
 
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 
     transition: all 0.2s ease-out;
 
@@ -160,6 +160,10 @@ nav.back {
   nav {
     .nav-hide {
       width: 60vw;
+
+      h3 {
+        padding: 10px 20px;
+      }
     }
   }
 }
@@ -169,6 +173,7 @@ nav.back {
     padding: 20px;
 
     .nav-hide {
+      align-items: center;
       width: 100vw;
     }
   }
