@@ -6,3 +6,9 @@
   background-size: 520px 520px;
   background-repeat: no-repeat;
 }
+
+@media only screen and(max-width: 768px) {
+  #syllabus-page {
+    padding: 50px 5vw 0;
+  }
+}

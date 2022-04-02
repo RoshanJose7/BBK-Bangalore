@@ -22,6 +22,12 @@
     }
   }
 
+  #organization-bod {
+    .member-card {
+      margin: 20px 0;
+    }
+  }
+
   #organization-jp {
     .organization-jp-list {
       display: flex;
@@ -45,16 +51,60 @@
     margin-bottom: 100px;
 
     #organization-bb-list {
-      height: 85vh;
+      max-height: 85vh;
       width: 80%;
-
-      padding-left: 200px;
 
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       flex-wrap: wrap;
+    }
+  }
+}
+
+@media only screen and(max-width: 1366px) {
+  #organization-page {
+    #organization-bb {
+      #organization-bb-list {
+        max-height: 120vh;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  #organization-page {
+    h2 {
+      margin: 50px 0;
+      padding: 0 40px;
+      text-align: center;
+    }
+
+    #organization-jp {
+      .organization-jp-list {
+        .member-card {
+          margin: 20px 0;
+        }
+      }
+    }
+
+    #organization-bb {
+      #organization-bb-list {
+        max-height: min-content;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  #organization-page {
+    #organization-bod {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   }
 }

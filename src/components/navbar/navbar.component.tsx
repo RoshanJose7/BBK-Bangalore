@@ -58,10 +58,10 @@ function Navbar() {
       </div>
 
       <div ref={navLinksRef} className="nav-hide">
-        <p onClick={() => handleNavigate("/organization")}>Organization</p>
-        <p onClick={() => handleNavigate("/dojos")}>Our Dojo's</p>
-        <p onClick={() => handleNavigate("/syllabus")}>Syllabus</p>
-        <p onClick={() => handleNavigate("/events")}>Events & Gallery</p>
+        <h3 onClick={() => handleNavigate("/organization")}>Organization</h3>
+        <h3 onClick={() => handleNavigate("/dojos")}>Our Dojo's</h3>
+        <h3 onClick={() => handleNavigate("/syllabus")}>Syllabus</h3>
+        <h3 onClick={() => handleNavigate("/events")}>Events & Gallery</h3>
       </div>
     </nav>
   );

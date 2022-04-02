@@ -8,7 +8,7 @@
 
     background-color: #171717;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom right;
 
     h3 {
       font-family: "Benzin-Bold";
@@ -20,16 +20,54 @@
 
   .dojo-section:nth-child(1) {
     background-image: url("../../assets/images/dojos/karate-1.png");
-    background-size: 30% 100%;
+    background-size: 450px 100%;
   }
 
   .dojo-section:nth-child(2) {
     background-image: url("../../assets/images/dojos/karate-2.png");
-    background-size: 30% 100%;
+    background-size: 450px 100%;
   }
 
   .dojo-section:nth-child(3) {
     background-image: url("../../assets/images/dojos/karate-3.png");
-    background-size: 25% 100%;
+    background-size: 360px 100%;
+  }
+}
+
+@media only screen and(max-width: 1024px) {
+  #dojo-page {
+    padding: 50px 5vw;
+
+    .dojo-section {
+      padding: 20px 50px;
+    }
+
+    .dojo-section:nth-child(1) {
+      background-size: 400px 100%;
+    }
+
+    .dojo-section:nth-child(2) {
+      background-size: 400px 100%;
+    }
+
+    .dojo-section:nth-child(3) {
+      background-size: 330px 100%;
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  #dojo-page {
+    .dojo-section:nth-child(1) {
+      background-size: 480px 100%;
+    }
+
+    .dojo-section:nth-child(2) {
+      background-size: 480px 100%;
+    }
+
+    .dojo-section:nth-child(3) {
+      background-size: 370px 120%;
+    }
   }
 }

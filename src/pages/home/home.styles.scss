@@ -1,9 +1,10 @@
 @import "../../constants.scss";
 
 #hero-section {
-  padding-top: 100px;
-  width: 100vw;
+  margin-bottom: 100px;
   padding: 0;
+
+  width: 100vw;
 
   .left {
     padding-left: 5vw;
@@ -28,7 +29,7 @@
 
     .elevated-button {
       margin-top: 20px;
-      width: 45%;
+      width: 40%;
     }
 
     #hero-section-videos {

@@ -48,3 +48,13 @@
     }
   }
 }
+
+@media only screen and(max-width: 468px) {
+  .event-card {
+    width: 280px;
+
+    img {
+      width: 250px;
+    }
+  }
+}

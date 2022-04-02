@@ -34,6 +34,18 @@ h6 {
   h1 {
     font-size: 5rem;
   }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and(max-width: 768px) {
@@ -49,10 +61,6 @@ h6 {
     font-size: 1.75rem;
   }
 
-  h4 {
-    font-size: 1.5rem;
-  }
-
   h5 {
     font-size: 1rem;
   }
@@ -63,27 +71,7 @@ h6 {
 }
 
 @media only screen and(max-width: 468px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-
   h4 {
     font-size: 1.25rem;
-  }
-
-  h5 {
-    font-size: 1rem;
-  }
-
-  h6 {
-    font-size: 0.5rem;
   }
 }
