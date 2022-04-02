@@ -37,6 +37,7 @@
 
     #gallery-img-wrapper {
       position: relative;
+      z-index: -1;
       height: 630px;
       width: 100vw;
 
@@ -46,6 +47,7 @@
         margin: 20px 0 60px;
 
         position: absolute;
+        z-index: -1;
         top: 0;
         right: 0;
         opacity: 1;

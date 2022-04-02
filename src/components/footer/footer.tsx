@@ -1,13 +1,12 @@
-import { ReactComponent as MapSVG } from "../../assets/vectors/map.svg";
-import { ReactComponent as PhoneSVG } from "../../assets/vectors/phone.svg";
-import { ReactComponent as InstaSVG } from "../../assets/vectors/insta.svg";
+import AltLogoImage from "../../assets/images/alt-logo.png";
 import { ReactComponent as FbSVG } from "../../assets/vectors/fb.svg";
 import { ReactComponent as YtSVG } from "../../assets/vectors/yt.svg";
 import { ReactComponent as TgSVG } from "../../assets/vectors/tg.svg";
+import { ReactComponent as MapSVG } from "../../assets/vectors/map.svg";
+import { ReactComponent as PhoneSVG } from "../../assets/vectors/phone.svg";
+import { ReactComponent as InstaSVG } from "../../assets/vectors/insta.svg";
 import { ReactComponent as WhatsAppSVG } from "../../assets/vectors/whatsapp.svg";
 import { ReactComponent as TwitterSVG } from "../../assets/vectors/twitter.svg";
-
-import AltLogoImage from "../../assets/images/alt-logo.png";
 import "./footer.styles.scss";
 
 function Footer() {
@@ -38,7 +37,7 @@ function Footer() {
           <PhoneSVG />
 
           <div className="footer-col">
-            <h5>
+            <h5 className="link">
               Derick Kishan Karkada
               <br />
               +91 97432 03432
@@ -50,38 +49,92 @@ function Footer() {
       <div className="footer-socials">
         <h4>Follow us on</h4>
 
-        <div className="footer-row">
+        <a
+          href="https://www.instagram.com/bangalorebudokan_/"
+          target="_blank"
+          rel="noreferrer"
+          className="footer-row"
+        >
           <InstaSVG />
-          <h5>bangalorebudokan_</h5>
-        </div>
-        <div className="footer-row">
+          <h5 className="link">bangalorebudokan_</h5>
+        </a>
+
+        <a
+          href="https://www.facebook.com/BangaloreBudokanKarateAndMartialartsTrust/"
+          target="_blank"
+          rel="noreferrer"
+          className="footer-row"
+        >
           <FbSVG />
-          <h5>Bangalore Budokan</h5>
-        </div>
-        <div className="footer-row">
+          <h5 className="link">Bangalore Budokan</h5>
+        </a>
+
+        <a
+          href="https://www.youtube.com/channel/UCf5RZy3Ys5kiJhxHjFYg1Zg"
+          target="_blank"
+          rel="noreferrer"
+          className="footer-row"
+        >
           <YtSVG />
-          <h5>Bangalore Budokan</h5>
-        </div>
-        <div className="footer-row">
+          <h5 className="link">Bangalore Budokan</h5>
+        </a>
+
+        <a
+          href="https://t.me/bangalore_budokan"
+          target="_blank"
+          rel="noreferrer"
+          className="footer-row"
+        >
           <TgSVG />
-          <h5>Bangalore Budokan Karate</h5>
-        </div>
+          <h5 className="link">Bangalore Budokan Karate</h5>
+        </a>
+
+        <a
+          href="https://www.instagram.com/bangalorebudokan_/"
+          target="_blank"
+          rel="noreferrer"
+          className="footer-row"
+        >
+          <TwitterSVG />
+          <h5 className="link">BBudokan</h5>
+        </a>
+
         <div className="footer-row">
           <WhatsAppSVG />
           <h5>+91 97432 03432</h5>
-        </div>
-        <div className="footer-row">
-          <TwitterSVG />
-          <h5>BBudokan</h5>
         </div>
       </div>
 
       <div className="footer-more-links">
         <h4>More Links</h4>
 
-        <h5>We're Hiring</h5>
-        <h5>Collaboration with BBK</h5>
-        <h5>Get Affiliated to BBK</h5>
+        <h5 className="link">
+          <a
+            href="https://www.instagram.com/bangalorebudokan_/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            We're Hiring
+          </a>
+        </h5>
+        <h5 className="link">
+          <a
+            href="https://www.instagram.com/bangalorebudokan_/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Collaboration with BBK
+          </a>
+        </h5>
+        <h5 className="link">
+          <a
+            href="https://www.instagram.com/bangalorebudokan_/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Get Affiliated to BBK
+          </a>
+        </h5>
       </div>
     </footer>
   );

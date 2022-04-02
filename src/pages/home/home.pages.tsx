@@ -1,14 +1,13 @@
-import ElevatedButton from "../../components/ElevatedButton/elevatedbutton";
+import { useEffect, useRef } from "react";
 
+import ElevatedButton from "../../components/ElevatedButton/elevatedbutton";
 import Chief1Image from "../../assets/images/homepage/chief-1.png";
 import Chief2Image from "../../assets/images/homepage/chief-2.png";
 import Chief3Image from "../../assets/images/homepage/chief-3.png";
 import HistorySectionImage from "../../assets/images/homepage/history-section-image.png";
 import HistorySectionImage2 from "../../assets/images/homepage/history-section-image-2.png";
-
 import MemberCard from "../../components/membercard/membercard.components";
 import "./home.styles.scss";
-import { useEffect, useRef } from "react";
 
 function HomePage() {
   const img1Ref = useRef<HTMLImageElement | null>(null);
@@ -76,7 +75,9 @@ function HomePage() {
       <section id="history-section">
         <div className="left">
           <h2>History of BBK</h2>
+
           <h4>Our Bangalore Budokan was started in 2005.</h4>
+          <br />
 
           <h4>
             We are having a successful run from the past 12years, since the past
@@ -85,20 +86,24 @@ function HomePage() {
             30+ certified District, State, National and International level
             Referees and Technical committee members.
           </h4>
+          <br />
 
           <h4>
             BBK does not only expertise in Karate; we have trained personnel's
             and instructors in different forms of Martial Arts such as
             Taekwondo, Aikido, Judo and many more.
           </h4>
+          <br />
 
           <h4>
             BBK has over 35+ branches in Bangalore and we presently have 3+
             branches in Udupi district. We have an aim of 100+ branches all over
             Karnataka State soon.
             <br />
+            <br />
             As quoted by Bruce Lee - “A quality Martial Artist is always ready
             for any move, and trains oneself invincible".
+            <br />
             <br />
             This is the main motto and vision of BBK. A Fit, Strong, Bold and
             Invincible Young India.
@@ -126,11 +131,13 @@ function HomePage() {
               Karkada has a vast experience of over 31years in the field of
               Martial Arts.
               <br />
+              <br />
               This experience and Knowledge is the backbone of our institute.
               SoShihan Derick Kishan and BBK have participated and have
               conducted many State, National and International Championships,
               which make our training style and trainers approach very
               professional.
+              <br />
               <br />
               He is a trained Instructor in Traditional and Modern Karate, Judo,
               Aikido, MMA, Street fight and many more styles of Martial Arts.
