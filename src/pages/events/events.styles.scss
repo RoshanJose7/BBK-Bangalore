@@ -9,10 +9,22 @@
     padding: 0 10vw 40px;
 
     .events-list {
+      min-height: 500px;
       padding: 10px 0;
       display: flex;
       align-items: baseline;
       overflow-x: scroll;
+
+      .empty {
+        height: 480px;
+        width: 100%;
+
+        padding-top: 200px;
+
+        text-align: center;
+
+        color: #a6a6a6;
+      }
     }
   }
 
@@ -23,23 +35,39 @@
       margin-left: 10vw;
     }
 
-    #gallery-img-1-container,
-    #gallery-img-2-container {
+    #gallery-img-wrapper {
+      position: relative;
       height: 630px;
-      width: 100%;
-      margin: 20px 0 60px;
+      width: 100vw;
 
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-    }
+      .gallery-img-container {
+        height: 630px;
+        width: 100vw;
+        margin: 20px 0 60px;
 
-    #gallery-img-1-container {
-      background-image: url("../../assets/images/gallery/1.png");
-    }
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 1;
 
-    #gallery-img-2-container {
-      background-image: url("../../assets/images/gallery/2.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../../assets/images/gallery/1.png");
+
+        transition: all 0.3s ease-in-out;
+        transform: translateY(0);
+      }
+
+      .gallery-img-container:nth-child(2) {
+        background-image: url("../../assets/images/gallery/2.png");
+      }
+
+      .gallery-img-container.hide {
+        opacity: 0;
+
+        transform: translateY(-100px);
+      }
     }
   }
 }
@@ -53,12 +81,14 @@
     #gallery {
       margin: 20px 0;
 
-      #gallery-img-1-container,
-      #gallery-img-2-container {
-        height: 170px;
-        width: 100%;
-        background-size: contain;
-        margin: 0;
+      #gallery-img-wrapper {
+        .gallery-img-container,
+        .gallery-img-container {
+          height: 170px;
+          width: 100%;
+          background-size: contain;
+          margin: 0;
+        }
       }
     }
   }

@@ -250,57 +250,31 @@ export const bbList = [
   "Zaiba Quarth-Ul-Ain",
 ];
 
-export const upcomingEventsList = [
-  {
-    title: "Self Defense for Women",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
-    imgUrl: "/images/events/upcoming/placeholder.png",
-  },
-  {
-    title: "Self Defense for Women",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
-    imgUrl: "/images/events/upcoming/placeholder.png",
-  },
-  {
-    title: "Self Defense for Women",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
-    imgUrl: "/images/events/upcoming/placeholder.png",
-  },
-];
+export const upcomingEventsList = [];
 
 export const pastEventsList = [
   {
-    title: "Asia Cup",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
+    title: "4th Asia Inter Continental WUKF Karate Championships",
+    subtitle:
+      "BBK participated with an strength of 15+ participants and won over 35+ medals in various range of events",
+    time: "2012",
+    venue: "Delhi",
     imgUrl: "/images/events/past/1.png",
   },
   {
-    title: "Mangalore Overall Championship",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
+    title: "27th State Level Inter Dojo Karate Championships",
+    subtitle:
+      "BBK participated with a strength of 50+ participants and won 90+ medals in various different events and also emerged the Overall Champions.",
+    time: "2016",
+    venue: "Uppinangady",
     imgUrl: "/images/events/past/2.png",
   },
   {
-    title: "Mangalore Overall Championship",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
+    title: "Bangalore Open Karate Championship",
+    subtitle:
+      "BBK participated with a strength of 20+ competitors and won 45+ medals in various range of events",
+    time: "15th Jan 2016",
+    venue: "Bangalore",
     imgUrl: "/images/events/past/3.png",
-  },
-  {
-    title: "Mangalore Overall Championship",
-    subtitle: "Helps in learning the basic karate moves",
-    time: "31-03-2022 |4pm-5pm",
-    venue: "Whitefield Branch",
-    imgUrl: "/images/events/past/4.png",
   },
 ];

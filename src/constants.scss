@@ -50,7 +50,8 @@ h6 {
 
 @media only screen and(max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    // font-size: 3rem;
+    font-size: clamp(2.5rem, calc(1.1719rem + 6.25vw), 3rem);
   }
 
   h2 {
@@ -64,13 +65,13 @@ h6 {
   h5 {
     font-size: 1rem;
   }
-
-  h6 {
-    font-size: 0.5rem;
-  }
 }
 
 @media only screen and(max-width: 468px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+
   h4 {
     font-size: 1.25rem;
   }

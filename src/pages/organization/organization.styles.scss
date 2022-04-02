@@ -23,6 +23,8 @@
   }
 
   #organization-bod {
+    padding: 0 10px;
+
     .member-card {
       margin: 20px 0;
     }
@@ -120,9 +122,23 @@
 @media only screen and(max-width: 768px) {
   #organization-page {
     #organization-bod {
+      .member-card {
+        padding: 0 10px;
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
       .row {
+        width: 100%;
         flex-direction: column;
         align-items: center;
+
+        .member-card {
+          width: 100%;
+        }
       }
     }
   }

@@ -4,11 +4,27 @@ import Chief1Image from "../../assets/images/homepage/chief-1.png";
 import Chief2Image from "../../assets/images/homepage/chief-2.png";
 import Chief3Image from "../../assets/images/homepage/chief-3.png";
 import HistorySectionImage from "../../assets/images/homepage/history-section-image.png";
+import HistorySectionImage2 from "../../assets/images/homepage/history-section-image-2.png";
 
 import MemberCard from "../../components/membercard/membercard.components";
 import "./home.styles.scss";
+import { useEffect, useRef } from "react";
 
 function HomePage() {
+  const img1Ref = useRef<HTMLImageElement | null>(null);
+  const img2Ref = useRef<HTMLImageElement | null>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      img1Ref.current?.classList.toggle("hide");
+      img2Ref.current?.classList.toggle("hide");
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <>
       <main id="hero-section">
@@ -35,17 +51,16 @@ function HomePage() {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/cWNEl4HE2OE"
+                src="https://www.youtube.com/embed/ddkYMdcRAYA"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/X8ipUgXH6jw"
+                src="https://www.youtube.com/embed/uL-QEMtsuj0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -72,7 +87,7 @@ function HomePage() {
           </h4>
 
           <h4>
-            BBK does not only expertise in Karate; we have trained personnel’s
+            BBK does not only expertise in Karate; we have trained personnel's
             and instructors in different forms of Martial Arts such as
             Taekwondo, Aikido, Judo and many more.
           </h4>
@@ -91,7 +106,13 @@ function HomePage() {
         </div>
 
         <div className="right">
-          <img src={HistorySectionImage} alt="History Section" />
+          <img ref={img1Ref} src={HistorySectionImage} alt="History Section" />
+          <img
+            className="hide"
+            ref={img2Ref}
+            src={HistorySectionImage2}
+            alt="History Section"
+          />
         </div>
       </section>
 
