@@ -1,3 +1,12 @@
+export const historySlides = [
+  { imgUrl: "/images/history/1.png" },
+  { imgUrl: "/images/history/2.png" },
+  { imgUrl: "/images/history/3.png" },
+  { imgUrl: "/images/history/4.png" },
+  { imgUrl: "/images/history/5.png" },
+  { imgUrl: "/images/history/6.png" },
+];
+
 export const syllabus = [
   {
     title: "10th Kyu",
@@ -193,6 +202,16 @@ export const jpList = [
     subtitle: "Judging Panel & Instructor",
     imgUrl: "/images/organization/jp/24.png",
   },
+  {
+    title: "Sachin Keerthan",
+    subtitle: "Referee",
+    imgUrl: "/images/organization/jp/25.jpeg",
+  },
+  {
+    title: "Sahiljeet Singh Bains (2nd Dan)",
+    subtitle: "Referee",
+    imgUrl: "/images/organization/jp/26.jpeg",
+  },
 ];
 
 export const bbList = [
@@ -250,7 +269,23 @@ export const bbList = [
   "Zaiba Quarth-Ul-Ain",
 ];
 
-export const upcomingEventsList = [];
+export const upcomingEventsList = [
+  {
+    title: "Martial Arts & Dance Summer Camp",
+    subtitle:
+      "BBK is organizing a Summer Camp for people of all ages to get an opportunity to learn new moves and skills",
+    time: "April 15",
+    venue: "SSM Public School, Bangalore",
+    imgUrl: "/images/events/upcoming/1.jpeg",
+  },
+  {
+    title: "Online Karate Classes",
+    subtitle: "Learn Karate from the comfort of your home",
+    time: "TBA",
+    venue: "Online",
+    imgUrl: "/images/events/upcoming/2.jpeg",
+  },
+];
 
 export const pastEventsList = [
   {
@@ -277,4 +312,10 @@ export const pastEventsList = [
     venue: "Bangalore",
     imgUrl: "/images/events/past/3.png",
   },
+];
+
+export const gallerySlides = [
+  { imgUrl: "/images/events/gallery/1.png" },
+  { imgUrl: "/images/events/gallery/2.png" },
+  { imgUrl: "/images/events/gallery/3.png" },
 ];

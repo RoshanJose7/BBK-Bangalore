@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
 import MemberCard from "../../components/membercard/membercard.components";
-import { bbList, jpList } from "../../constants";
+import { bbList, jpList } from "../utils/constants";
+import { fadeOutExitAnimation } from "../utils/variants";
 import "./organization.styles.scss";
 
 function OrganizationPage() {
   return (
-    <div id="organization-page">
+    <motion.div exit={fadeOutExitAnimation} id="organization-page">
       <div id="organization-bod">
         <h2>Our Organization</h2>
 
@@ -38,8 +40,9 @@ function OrganizationPage() {
         <h2>Our Referee's and Judging Panel</h2>
 
         <div className="organization-jp-list">
-          {jpList.map((jp) => (
+          {jpList.map((jp, idx) => (
             <MemberCard
+              key={idx}
               title={jp.title}
               subtitle={jp.subtitle}
               imgUrl={jp.imgUrl}
@@ -52,12 +55,12 @@ function OrganizationPage() {
         <h2>Our Black Belts</h2>
 
         <div id="organization-bb-list">
-          {bbList.map((bb) => (
-            <h4>{bb}</h4>
+          {bbList.map((bb, idx) => (
+            <h4 key={idx}>{bb}</h4>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

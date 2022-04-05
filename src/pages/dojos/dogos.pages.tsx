@@ -1,8 +1,10 @@
+import { motion } from "framer-motion";
+import { fadeOutExitAnimation } from "../utils/variants";
 import "./dojos.styles.scss";
 
 function OurDojosPage() {
   return (
-    <div id="dojo-page">
+    <motion.div exit={fadeOutExitAnimation} id="dojo-page">
       <div className="dojo-section">
         <h3>Educational Institute</h3>
 
@@ -96,7 +98,7 @@ function OurDojosPage() {
           Wilson Garden, Bangalore.
         </h4>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

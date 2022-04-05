@@ -10,7 +10,7 @@
 
     .events-list {
       min-height: 500px;
-      padding: 10px 0;
+      padding: 20px 10px;
       display: flex;
       align-items: baseline;
       overflow-x: scroll;
@@ -55,14 +55,9 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        background-image: url("../../assets/images/gallery/1.png");
 
         transition: all 0.3s ease-in-out;
         transform: translateY(0);
-      }
-
-      .gallery-img-container:nth-child(2) {
-        background-image: url("../../assets/images/gallery/2.png");
       }
 
       .gallery-img-container.hide {

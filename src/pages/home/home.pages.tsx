@@ -1,22 +1,24 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import ElevatedButton from "../../components/ElevatedButton/elevatedbutton";
 import Chief1Image from "../../assets/images/homepage/chief-1.png";
 import Chief2Image from "../../assets/images/homepage/chief-2.png";
 import Chief3Image from "../../assets/images/homepage/chief-3.png";
-import HistorySectionImage from "../../assets/images/homepage/history-section-image.png";
-import HistorySectionImage2 from "../../assets/images/homepage/history-section-image-2.png";
 import MemberCard from "../../components/membercard/membercard.components";
+import { fadeOutExitAnimation } from "../utils/variants";
+import { historySlides } from "../utils/constants";
 import "./home.styles.scss";
 
 function HomePage() {
-  const img1Ref = useRef<HTMLImageElement | null>(null);
-  const img2Ref = useRef<HTMLImageElement | null>(null);
+  const [slideCounter, setSlideCounter] = useState<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      img1Ref.current?.classList.toggle("hide");
-      img2Ref.current?.classList.toggle("hide");
+      setSlideCounter((prevCounter) => {
+        if (prevCounter + 1 === historySlides.length) return 0;
+        else return prevCounter + 1;
+      });
     }, 5000);
 
     return () => {
@@ -25,7 +27,7 @@ function HomePage() {
   }, []);
 
   return (
-    <>
+    <motion.div exit={fadeOutExitAnimation}>
       <main id="hero-section">
         <div className="left">
           <div>
@@ -111,13 +113,14 @@ function HomePage() {
         </div>
 
         <div className="right">
-          <img ref={img1Ref} src={HistorySectionImage} alt="History Section" />
-          <img
-            className="hide"
-            ref={img2Ref}
-            src={HistorySectionImage2}
-            alt="History Section"
-          />
+          {historySlides.map((historySlide, idx) => (
+            <img
+              className={slideCounter !== idx ? "hide" : ""}
+              key={idx}
+              src={historySlide.imgUrl}
+              alt="History Section"
+            />
+          ))}
         </div>
       </section>
 
@@ -168,7 +171,7 @@ function HomePage() {
           </div>
         </div>
       </section>
-    </>
+    </motion.div>
   );
 }
 

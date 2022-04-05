@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
 import SyllabusCard from "../../components/syllabuscard/syllabuscard";
-import { syllabus } from "../../constants";
+import { syllabus } from "../utils/constants";
+import { fadeOutExitAnimation } from "../utils/variants";
 import "./syllabus.styles.scss";
 
 function SyllabusPage() {
   return (
-    <div id="syllabus-page">
+    <motion.div exit={fadeOutExitAnimation} id="syllabus-page">
       {syllabus.map((syllabii) => (
         <SyllabusCard
           title={syllabii.title}
@@ -14,7 +16,7 @@ function SyllabusPage() {
           imgUrl={syllabii.imgUrl}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }
 

@@ -27,8 +27,9 @@ function Navbar() {
   }
 
   function handleNavigate(route: string) {
-    window.scrollTo({
+    document.documentElement.scrollTo({
       top: 0,
+      behavior: "smooth",
     });
 
     icon1Ref.current?.classList.remove("a");

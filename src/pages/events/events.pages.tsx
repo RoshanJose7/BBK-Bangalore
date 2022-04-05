@@ -1,16 +1,24 @@
-import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+
 import EventCard from "../../components/eventcard/eventcard";
-import { pastEventsList, upcomingEventsList } from "../../constants";
+import { fadeOutExitAnimation } from "../utils/variants";
+import {
+  gallerySlides,
+  pastEventsList,
+  upcomingEventsList,
+} from "../utils/constants";
 import "./events.styles.scss";
 
 function EventsPage() {
-  const img1Ref = useRef<HTMLDivElement | null>(null);
-  const img2Ref = useRef<HTMLDivElement | null>(null);
+  const [slideCounter, setSlideCounter] = useState<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      img1Ref.current?.classList.toggle("hide");
-      img2Ref.current?.classList.toggle("hide");
+      setSlideCounter((prevCounter) => {
+        if (prevCounter + 1 === gallerySlides.length) return 0;
+        else return prevCounter + 1;
+      });
     }, 5000);
 
     return () => {
@@ -19,7 +27,7 @@ function EventsPage() {
   }, []);
 
   return (
-    <div id="events-page">
+    <motion.div exit={fadeOutExitAnimation} id="events-page">
       <div className="events">
         <h2>UPCOMING EVENTS</h2>
 
@@ -27,8 +35,9 @@ function EventsPage() {
           {upcomingEventsList.length === 0 ? (
             <h4 className="empty">No Upcoming Events</h4>
           ) : (
-            upcomingEventsList.map((ue: any) => (
+            upcomingEventsList.map((ue: any, idx) => (
               <EventCard
+                key={idx}
                 title={ue.title}
                 subtitle={ue.subtitle}
                 time={ue.time}
@@ -44,8 +53,9 @@ function EventsPage() {
         <h2>PAST EVENTS</h2>
 
         <div className="events-list">
-          {pastEventsList.map((pe) => (
+          {pastEventsList.map((pe, idx) => (
             <EventCard
+              key={idx}
               title={pe.title}
               subtitle={pe.subtitle}
               time={pe.time}
@@ -60,11 +70,20 @@ function EventsPage() {
         <h2>GALLERY</h2>
 
         <div id="gallery-img-wrapper">
-          <div ref={img1Ref} className="gallery-img-container"></div>
-          <div ref={img2Ref} className="gallery-img-container hide"></div>
+          {gallerySlides.map((gallerySlide: { imgUrl: string }, idx) => (
+            <div
+              key={idx}
+              className={`gallery-img-container ${
+                idx !== slideCounter ? "hide" : ""
+              }`}
+              style={{
+                backgroundImage: `url(${gallerySlide.imgUrl})`,
+              }}
+            ></div>
+          ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
