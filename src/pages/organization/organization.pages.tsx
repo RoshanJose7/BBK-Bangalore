@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import MemberCard from "../../components/membercard/membercard.components";
-import { bbList, jpList } from "../utils/constants";
-import { fadeOutExitAnimation } from "../utils/variants";
+import { bbList, jpList } from "../../utils/constants";
+import { fadeOutExitAnimation } from "../../utils/variants";
 import "./organization.styles.scss";
 
 function OrganizationPage() {

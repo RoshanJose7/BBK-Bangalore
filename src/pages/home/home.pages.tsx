@@ -6,8 +6,8 @@ import Chief1Image from "../../assets/images/homepage/chief-1.png";
 import Chief2Image from "../../assets/images/homepage/chief-2.png";
 import Chief3Image from "../../assets/images/homepage/chief-3.png";
 import MemberCard from "../../components/membercard/membercard.components";
-import { fadeOutExitAnimation } from "../utils/variants";
-import { historySlides } from "../utils/constants";
+import { fadeOutExitAnimation } from "../../utils/variants";
+import { historySlides } from "../../utils/constants";
 import "./home.styles.scss";
 
 function HomePage() {
@@ -42,7 +42,10 @@ function HomePage() {
               and get your moves right
             </h5>
 
-            <ElevatedButton text={"Register for upcoming batch"} />
+            <ElevatedButton
+              text={"Register for upcoming batch"}
+              url="https://forms.gle/NqBKQ85tT3HYZs7j8"
+            />
           </div>
 
           <div id="hero-section-videos">

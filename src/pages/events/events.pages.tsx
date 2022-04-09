@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import EventCard from "../../components/eventcard/eventcard";
-import { fadeOutExitAnimation } from "../utils/variants";
+import { fadeOutExitAnimation } from "../../utils/variants";
 import {
   gallerySlides,
   pastEventsList,
   upcomingEventsList,
-} from "../utils/constants";
+} from "../../utils/constants";
 import "./events.styles.scss";
 
 function EventsPage() {

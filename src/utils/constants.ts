@@ -208,7 +208,7 @@ export const jpList = [
     imgUrl: "/images/organization/jp/25.jpeg",
   },
   {
-    title: "Sahiljeet Singh Bains (2nd Dan)",
+    title: "Sahiljeet Singh Bains",
     subtitle: "Referee",
     imgUrl: "/images/organization/jp/26.jpeg",
   },

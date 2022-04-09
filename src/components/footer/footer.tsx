@@ -110,7 +110,7 @@ function Footer() {
 
         <h5 className="link">
           <a
-            href="https://www.instagram.com/bangalorebudokan_/"
+            href="https://forms.gle/NqBKQ85tT3HYZs7j8"
             target="_blank"
             rel="noreferrer"
           >
@@ -119,7 +119,7 @@ function Footer() {
         </h5>
         <h5 className="link">
           <a
-            href="https://www.instagram.com/bangalorebudokan_/"
+            href="https://forms.gle/NqBKQ85tT3HYZs7j8"
             target="_blank"
             rel="noreferrer"
           >
@@ -128,7 +128,7 @@ function Footer() {
         </h5>
         <h5 className="link">
           <a
-            href="https://www.instagram.com/bangalorebudokan_/"
+            href="https://forms.gle/NqBKQ85tT3HYZs7j8/"
             target="_blank"
             rel="noreferrer"
           >

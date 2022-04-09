@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { fadeOutExitAnimation } from "../utils/variants";
+import { fadeOutExitAnimation } from "../../utils/variants";
 import "./dojos.styles.scss";
 
 function OurDojosPage() {

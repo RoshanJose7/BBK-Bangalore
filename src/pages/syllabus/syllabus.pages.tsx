@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import SyllabusCard from "../../components/syllabuscard/syllabuscard";
-import { syllabus } from "../utils/constants";
-import { fadeOutExitAnimation } from "../utils/variants";
+import { syllabus } from "../../utils/constants";
+import { fadeOutExitAnimation } from "../../utils/variants";
 import "./syllabus.styles.scss";
 
 function SyllabusPage() {
