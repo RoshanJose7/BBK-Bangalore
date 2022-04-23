@@ -70,7 +70,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://www.youtube.com/channel/UCf5RZy3Ys5kiJhxHjFYg1Zg"
+          href="https://youtube.com/channel/UCt6PIL82jQKc0ZVcW3N7hUg"
           target="_blank"
           rel="noreferrer"
           className="footer-row"
